@@ -1,0 +1,150 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+
+.calculator-area{
+    
+    background-color: rgb(0, 0, 0);  
+    width: 350px;
+    height: 580px;
+    justify-content: center;
+    margin: 10% auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px  #272733;
+    border:30px;
+    border-width: 6px;
+    border-color: rgba(0, 0, 0, 0.459);
+    border-style:outset;
+    
+}
+
+.calculation-area{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px 5px;
+}
+
+
+.input-area{
+    background-color: rgba(127, 255, 212, 0);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 20px;
+    width: 98%;
+    height: 130px;
+    margin-bottom: 5px;    
+    border: 30px;
+    border-width: 30px;
+    border: 5px;
+    border-width: 5px;
+    border-style: inset;
+    border-color: rgb(92, 102, 105);
+    padding-top: 20px;
+    
+    
+}
+.input-area-inside{
+    background-color: rgba(123, 52, 52, 0);
+    display: block;
+    width: 91%;
+    color: white;
+    height: 90px;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 20px;
+    
+    
+    
+}
+.display-result {
+    font-size: 25px;
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+}
+
+
+
+.keys{
+    display: flex;
+    /* background-color: rgb(97, 97, 68); */
+    width: 350px;
+    height: 400px;
+    justify-content: right;
+    
+}
+.operators{
+    display: flex;
+    /* background-color: aqua; */
+    height: 400px;
+    width: 100px;
+    justify-content:right;
+    
+    
+}
+.operator-btns{
+    
+    margin:10px;
+}
+
+.btn{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    background-color: rgba(31, 31, 34, 0.422);
+    color: white;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    cursor:pointer;
+
+
+    /* border of buttons */
+    border-style:unset;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0.3px 0.3px 5px;
+    
+
+}
+.button-C{
+    color: rgb(241, 35, 35);
+}
+.button-bracket{
+    color:rgb(39, 211, 39);
+}
+.operator-btn{
+    color: rgb(39, 211, 39);
+    margin-right: 10px;
+}
+.button-percent{
+    color:rgb(39, 211, 39);
+}
+.operator-equal{
+    background-color: rgb(27, 135, 27);
+    color:white;
+}
+.operator-multiplication {
+    padding-top: 15px;
+}
+
+.number-btns{
+    margin: 10px;
+    margin-left:0px;
+    justify-content: left;
+    /* background-color: rgb(179, 37, 37); */
+    width:350px;
+    margin-right: 10px;
+}
+/* .number-btn{
+    color: green;
+    background-color: rgb(42, 126, 42); 
+}*/
+.btn-spacing-horizontal{
+    margin-left: 20px;
+}
+
+/* button Animation */
