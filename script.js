@@ -22,20 +22,13 @@ buttonElement.forEach((button)=>{
                         appendValue(')');
                         flag = false;
                     }
-                }
-                else if(button.innerHTML === 'del') {
+                }else if(button.innerHTML === 'del') {
                     deleteLastElement(document.getElementById('display').innerHTML);
-                }
-                
-                else{
+                }else{
                     appendValue(button.innerHTML);
                 }
             }
-            
         }
-        
-
-        
     });
 });
 
@@ -48,6 +41,7 @@ function appendValue(value) {
 function clearDisplay() {
     document.getElementById('display').innerHTML = '';
     document.getElementById('result-area').innerHTML  = '';
+    flag = false;
 }
 
 function calculateResult() {
@@ -56,6 +50,7 @@ function calculateResult() {
 
     const resultElement = document.getElementById('result-area');
     resultElement.innerHTML = result;
+    flag = false;
 
 }
 function deleteLastElement(value) {
