@@ -110,6 +110,9 @@ body{
     
 
 }
+.btn:active {
+    background-color: rgb(49, 52, 52);
+}
 .button-C{
     color: rgb(241, 35, 35);
 }
