@@ -1,9 +1,11 @@
 const buttonElement = document.querySelectorAll('.js-btn');
+let flag = false;
 
 buttonElement.forEach((button)=>{
     button.addEventListener('click', ()=>{
 
         document.getElementById('result-area').innerHTML = '';
+        
         
         if(button.innerHTML === 'C') {
             clearDisplay();
@@ -12,7 +14,22 @@ buttonElement.forEach((button)=>{
             
         }else {
             if(document.getElementById('display').innerHTML.length < 23) {
-                appendValue(button.innerHTML);
+                if(button.innerHTML=== '( )') {
+                    if(flag === false) {
+                        appendValue('(');
+                        flag = true;
+                    }else{
+                        appendValue(')');
+                        flag = false;
+                    }
+                }
+                else if(button.innerHTML === 'del') {
+                    deleteLastElement(document.getElementById('display').innerHTML);
+                }
+                
+                else{
+                    appendValue(button.innerHTML);
+                }
             }
             
         }
@@ -41,6 +58,13 @@ function calculateResult() {
     resultElement.innerHTML = result;
 
 }
+function deleteLastElement(value) {
+    let displayElement = document.getElementById('display');
+    let length = displayElement.innerHTML.length;
+    displayElement.innerHTML =  displayElement.innerHTML.slice(0,length-1);
+    
+}
 
 
 //23->max element length in screen
+
